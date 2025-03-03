@@ -6,11 +6,11 @@
 #    By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/26 07:36:31 by arabefam          #+#    #+#              #
-#    Updated: 2025/02/26 08:25:17 by arabefam         ###   ########.fr        #
+#    Updated: 2025/03/03 09:08:13 by arabefam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	brainz
+NAME		=	moarBrainz
 CXX			=	c++
 CXXFLAGS	=	-Wall -Werror -Wextra
 SRCS		=	main.cpp Zombie.cpp zombieHorde.cpp
