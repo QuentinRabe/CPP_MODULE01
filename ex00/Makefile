@@ -6,13 +6,13 @@
 #    By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/26 07:36:31 by arabefam          #+#    #+#              #
-#    Updated: 2025/02/26 08:06:10 by arabefam         ###   ########.fr        #
+#    Updated: 2025/03/12 17:03:51 by arabefam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	brainz
 CXX			=	c++
-CXXFLAGS	=	-Wall -Werror -Wextra
+CXXFLAGS	=	-Wall -Werror -Wextra -std=c++98
 SRCS		=	main.cpp Zombie.cpp randomChump.cpp newZombie.cpp
 OBJS		=	$(SRCS:.cpp=.o)
 

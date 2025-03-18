@@ -6,13 +6,13 @@
 #    By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/26 07:36:31 by arabefam          #+#    #+#              #
-#    Updated: 2025/03/02 20:54:10 by arabefam         ###   ########.fr        #
+#    Updated: 2025/03/12 17:05:55 by arabefam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	replacer
 CXX			=	c++
-CXXFLAGS	=	-Wall -Werror -Wextra
+CXXFLAGS	=	-Wall -Werror -Wextra -std=c++98
 OBJS		=	$(SRCS:.cpp=.o)
 SRCS		=	main.cpp FileReplacer.cpp
 
