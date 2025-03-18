@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 14:13:13 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/18 18:51:28 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/18 19:01:37 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@ std::string	FileReplacer::_makeReplacerFilename( void ) const {
 void	FileReplacer::_replacementProcess( std::ifstream& ifs, std::ofstream& ofs ) const {
 	std::stringstream	buffer;
 	std::string		content = "";
+	std::string	newContent = "";
 	buffer << ifs.rdbuf();
 	content = buffer.str();
 	size_t	pos;
 	size_t	prev_pos;
 	pos = 0;
 	prev_pos = 0;
-	std::string	newContent = "";
 	while ((pos = content.find(this->_target, prev_pos)) != std::string::npos) {
 		newContent.append(content, prev_pos, pos - prev_pos);
 		newContent.append(this->_replacement);
@@ -45,11 +45,6 @@ void	FileReplacer::_replacementProcess( std::ifstream& ifs, std::ofstream& ofs )
 	}
 	newContent.append(content, prev_pos, content.length() - prev_pos);
 	ofs << newContent;
-	/*std::string	line = "";
-
-	while ((std::getline(ifs, line))) {
-		newContent = "";
-	}*/
 }
 
 void	FileReplacer::replaceAllOccurences( void ) const {
